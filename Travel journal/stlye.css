@@ -1,0 +1,102 @@
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .preview-container, .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .uploaded-photo {
+            max-width: 200px;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        
+        .uploaded-video {
+            max-width: 300px;
+            border-radius: 4px;
+        }
+        
+        .uploaded-audio {
+            width: 300px;
+        }
+        
+        .drop-zone {
+            border: 2px dashed #ccc;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+            border-radius: 8px;
+        }
+        
+        .drop-zone.highlight {
+            background-color: #f0f8ff;
+            border-color: #4CAF50;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px 0;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        #entry-text {
+            width: 100%;
+            min-height: 100px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .custom-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 5px;
+        }
+        
+        .location-info {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e8f4fc;
+            border-radius: 4px;
+        }
+        
+        .journal-entries {
+            margin-top: 30px;
+        }
+        
+        .entry {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }

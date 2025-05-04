@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Worker Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      #result {
+        margin-top: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        min-height: 50px;
+      }
+      #status {
+        margin-top: 10px;
+        font-style: italic;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Web Worker Demo</h1>
+    <p>
+      This demonstrates heavy computation using Web Workers without blocking the
+      UI.
+    </p>
+
+    <button id="startWorker">Calculate Fibonacci(40)</button>
+    <button id="stopWorker" disabled>Stop Worker</button>
+
+    <div id="status">Ready</div>
+    <div id="result"></div>
+
+    <script src="main.js"></script>
+    <script src="worker.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" manifest="offline.manifest">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Offline Todo App</h1>
+        <div class="status-indicator">
+            <span id="online-status">Online</span>
+            <button id="simulate-offline" class="simulate-btn">Simulate Offline</button>
+        </div>
+        <div class="todo-input">
+            <input type="text" id="todoInput" placeholder="Add a new todo...">
+            <button onclick="addTodo()">Add</button>
+        </div>
+        <ul id="todoList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

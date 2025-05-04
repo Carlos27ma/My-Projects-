@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Journal Application</title>
+    <link rel="stylesheet" href="stlye.css" />
+  </head>
+  <body>
+    <h1>Travel Journal</h1>
+
+    <!-- File Upload Section -->
+    <div class="section" id="file-upload">
+      <h2>Upload Travel Photos</h2>
+      <input type="file" id="photo-upload" accept="image/*" multiple />
+      <div id="photo-preview" class="preview-container"></div>
+    </div>
+
+    <!-- Drag and Drop Section -->
+    <div class="section">
+      <h2>Drag and Drop Files</h2>
+      <div id="drop-zone" class="drop-zone">
+        <p>Drag and drop photos, videos or audio files here</p>
+      </div>
+    </div>
+
+    <!-- Multimedia Gallery -->
+    <div class="section" id="multimedia-gallery">
+      <h2>Travel Memories Gallery</h2>
+      <div class="gallery-container" id="gallery-display"></div>
+
+      <h3>Add More Media</h3>
+      <input type="file" id="video-upload" accept="video/*" />
+      <input type="file" id="audio-upload" accept="audio/*" />
+    </div>
+
+    <!-- Journal Entry with Geolocation -->
+    <div class="section" id="journal-entry">
+      <h2>Create New Journal Entry</h2>
+      <textarea
+        id="entry-text"
+        placeholder="Write about your travel experience..."
+      ></textarea>
+      <button id="get-location">Tag Current Location</button>
+      <div id="location-display" class="location-info"></div>
+      <button id="save-entry">Save Entry</button>
+    </div>
+
+    <!-- Saved Entries Display -->
+    <div class="section journal-entries">
+      <h2>Your Journal Entries</h2>
+      <div id="entries-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

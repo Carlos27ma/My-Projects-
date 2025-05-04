@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Data Application</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Data Retrieval</h1>
+
+      <div class="method-selector">
+        <label for="method">Select retrieval method:</label>
+        <select id="methodSelect">
+          <option value="fetch">Fetch API</option>
+          <option value="jquery">jQuery AJAX</option>
+          <option value="xhr">XMLHttpRequest</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="locationInput" placeholder="Enter city name" />
+        <button id="getWeatherBtn" onclick="">Get Weather</button>
+      </div>
+
+      <div id="weatherResult" class="weather-result" style="display: none">
+        <h2>Weather in <span id="cityName"></span></h2>
+        <p>Temperature: <span id="temperature"></span>°C</p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+        <p>Conditions: <span id="conditions"></span></p>
+      </div>
+
+      <div id="errorMessage" class="error" style="display: none"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(253, 248, 249);
+  color: black;
+}
+#container {
+  padding: 20px 2%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  color: red;
+  font-size: medium;
+  border-radius: none;
+  display: flex;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  display: inline-flex;
+  gap: 5;
+  padding: 2px;
+  color: black;
+  cursor: pointer;
+}
+
+nav li {
+  border-right: 0.5px solid grey;
+}
+
+nav #contact {
+  border: none;
+}
+
+a:hover {
+  background-color: #f0efef;
+}
+
+.content {
+  display: flex;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
+.section_pic-container {
+  display: flex;
+  margin: auto 0;
+}
+
+.section_text {
+  align-self: center;
+  width: 400px;
+  height: 250px;
+}
+
+.section_text p {
+  font-weight: 400;
+}
+
+#pages-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+#item1,
+#item2,
+#item3 {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 50%;
+  justify-content: space-around;
+  border: 0.1px solid rgb(131, 131, 131);
+}
+
+#myphoto {
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  margin-right: 40px;
+}
+
+#item1 {
+  background-color: orange;
+}
+
+#item2 {
+  background-color: red;
+}
+
+#item3 {
+  background-color: lightblue;
+}
+
+#item1:hover {
+  background-color: white;
+}
+
+#item2:hover {
+  background-color: white;
+}
+
+#item3:hover {
+  background-color: white;
+}
+
+.footer {
+  position: absolute sticky;
+  bottom: 0;
+  align-content: center;
+  background-color: none;
+  height: 120px;
+  width: 100%;
+}
+
+.footer-content {
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 33%;
+  padding: 10px 15px;
+  border-top: 1px solid lightgray;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  font-weight: 50%;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: grey;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}

@@ -1,0 +1,20 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+#message-container {
+  border: 1px solid #ccc;
+  height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+#message-input {
+  width: 70%;
+  padding: 8px;
+}
+#send-button {
+  padding: 8px 15px;
+}

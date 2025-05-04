@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Maveya - Projects</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(253, 248, 249);;
+      color: #333;
+    }
+    .section-header {
+      color: black;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .section-header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .section-header p {
+      font-size: 1.2em;
+      margin: 5px 0 0;
+    }
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .projects-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 10px;
+      scrollbar-width: thin;
+      scrollbar-color: #888 #f4f4f4;
+    }
+    .projects-container::-webkit-scrollbar {
+      height: 8px;
+    }
+    .projects-container::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+    .projects-container::-webkit-scrollbar-track {
+      background: #f4f4f4;
+    }
+    .project-card {
+      flex: 0 0 300px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .project-card h3 {
+      margin: 10px 0;
+      font-size: 1.5em;
+    }
+    .project-card p {
+      font-size: 1em;
+      color: #555;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: white;
+      background: #007bff;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .project-card a:hover {
+      background: #0056b3;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+        <a href="./index.html"><img width="100" src="./images/CARLOS.png" /></a>
+        <nav>
+          <img />
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li id="contact"><a href="contact.html">Contact</a></li>
+          </ol>
+        </nav>
+      </div>
+  <main>
+    <section class="section-header">
+      <h1>Carlos Maveya</h1>
+    <p>Explore my creative <strong style="color : red">Projects</strong></p>
+  </header>
+    </section>
+    <section>
+      <h2>My Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Portifolio WebPage</h3>
+          <p>Brief description of the project. For example: Developed a responsive website for a local business using HTML, CSS, and JavaScript.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Brief description of the project. For example: Developed a responsive website for a local business using HTML, CSS, and JavaScript.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>Brief description of the project. For example: Built a Python-based application to analyze data trends for a marketing campaign.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project 4</h3>
+          <p>Brief description of the project. For example: Created an e-commerce app with React and integrated payment systems.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+        <div class="footer-content">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Phone</h4>
+              <p>+27 67 1067 078</p>
+            </div>
+            <div class="footer-col">
+              <h4>Email</h4>
+              <ul>
+                <li><a href="mailto:c.maveya@gmail.com">c.maveya@gmail.com</a></ul>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow Me</h4>
+              <div class="social-links">
+                <a href="#"><i i class="fab fa-instagram"></i></a>
+                <a href="#"><i i class="fab fa-linkedin"></i></a>
+                <a href="#"><i i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

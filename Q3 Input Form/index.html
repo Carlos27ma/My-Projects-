@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="form" id="registrationForm">
+      <p class="title">Register</p>
+      <p class="message">Signup now and get full access to our app.</p>
+      <div class="flex">
+        <label>
+          <input
+            required=""
+            placeholder="Firstname"
+            type="text"
+            class="input"
+            name="firstname"
+            minlength="2"
+            maxlength="50"
+          />
+          <div class="error-message" id="firstname-error"></div>
+        </label>
+
+        <label>
+          <input
+            required=""
+            placeholder="Lastname"
+            type="text"
+            class="input"
+            name="lastname"
+            minlength="2"
+            maxlength="50"
+          />
+          <div class="error-message" id="lastname-error"></div>
+        </label>
+      </div>
+
+      <label>
+        <input
+          required=""
+          placeholder="Email"
+          type="email"
+          class="input"
+          name="email"
+        />
+        <div class="error-message" id="email-error"></div>
+      </label>
+      <label>
+        <input
+          required=""
+          placeholder="Password"
+          type="password"
+          class="input"
+          name="password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters"
+        />
+        <div class="error-message" id="password-error"></div>
+      </label>
+      <label>
+        <input
+          required=""
+          placeholder="Confirm password"
+          type="password"
+          class="input"
+          name="confirmPassword"
+          title="Passwords must match"
+        />
+        <div class="error-message" id="confirmPassword-error"></div>
+      </label>
+      <button class="submit" type="submit">Submit</button>
+      <p class="signin">Already have an acount ? <a href="#">Signin</a></p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

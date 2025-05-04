@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  color: black;
+}
+
+.map-container {
+  margin: 20px auto;
+  border: 2px solid #333;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+#venueMap {
+  background-color: #f5f5f5;
+}
+
+/* Hover effects */
+rect,
+circle,
+polygon {
+  transition: all 0.3s ease;
+  stroke: #333;
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+rect:hover,
+circle:hover,
+polygon:hover {
+  opacity: 0.8;
+  stroke-width: 3px;
+}
+
+/* Tooltip styling */
+#tooltip {
+  position: absolute;
+  background: white;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}

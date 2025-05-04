@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conference Venue Map</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Conference Venue Map</h1>
+    <div class="map-container">
+      <svg id="venueMap" width="600" height="400" viewBox="0 0 600 400">
+        <!-- Main Hall -->
+        <rect
+          id="mainHall"
+          x="50"
+          y="50"
+          width="200"
+          height="150"
+          fill="#4CAF50"
+        />
+        <text
+          x="150"
+          y="130"
+          text-anchor="middle"
+          fill="white"
+          style="color: black"
+        >
+          Main Hall
+        </text>
+
+        <!-- Workshop Room -->
+        <rect
+          id="workshopRoom"
+          x="350"
+          y="50"
+          width="200"
+          height="100"
+          fill="#2196F3"
+        />
+        <text x="450" y="110" text-anchor="middle" fill="white">
+          Workshop Room
+        </text>
+
+        <!-- Lounge Area -->
+        <circle id="lounge" cx="300" cy="300" r="80" fill="#FF9800" />
+        <text x="300" y="305" text-anchor="middle" fill="white">Lounge</text>
+
+        <!-- Info Desk -->
+        <polygon
+          id="infoDesk"
+          points="550,350 550,250 500,300"
+          fill="#9C27B0"
+        />
+        <text x="525" y="300" text-anchor="middle" fill="white">Info Desk</text>
+      </svg>
+    </div>
+
+    <!-- Tooltip for room details -->
+    <div id="tooltip" class="hidden">
+      <h3 id="roomName"></h3>
+      <p id="roomDetails"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

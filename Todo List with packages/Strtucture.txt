@@ -1,0 +1,10 @@
+todo-app/
+├── public/
+│   └── index.html
+├── src/
+│   └── index.js
+├── dist/
+│   └── bundle.js (generated after build)
+├── package.json
+├── webpack.config.js
+└── babel.config.json

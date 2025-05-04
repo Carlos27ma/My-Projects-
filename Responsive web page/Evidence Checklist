@@ -1,0 +1,19 @@
+Source code files:
+index.html
+about.html
+contact.html
+styles.css
+print.css
+script.js
+
+Screenshots/video demonstrating responsiveness:
+Desktop view
+Tablet view
+Mobile view
+Print preview
+Documentation:
+
+responsive-design.md (as shown above)
+
+This implementation meets all the requirements specified in the assignment, providing a fully responsive website that adapts to different form factors and includes print optimization.
+
